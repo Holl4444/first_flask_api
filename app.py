@@ -36,7 +36,7 @@ todo = Blueprint('todo blueprint', 'todo', url_prefix='/todo', description='TODO
 # Normally in database not hardcoded
 tasks = [
     {
-        'id': str(uuid4()),
+        'id': uuid4(),
         'created': datetime.now(timezone.utc), 
         'completed': False,
         'task': 'Create Flask API'
